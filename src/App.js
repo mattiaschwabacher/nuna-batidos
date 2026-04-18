@@ -674,7 +674,8 @@ function Contact() {
                 <div className="w-12 h-12 rounded-2xl bg-mint flex items-center justify-center text-xl flex-shrink-0">📍</div>
                 <div>
                   <h3 className="font-700 text-bark mb-1">Dirección</h3>
-                  <p className="text-earth text-sm">Asunción, Paraguay</p>
+                  <p className="text-earth text-sm">Av. Dr. Felipe Molas López & Veterano de la Guerra del 70</p>
+                  <p className="text-bark text-xs mt-0.5 font-600">Asunción, Paraguay</p>
                   <p className="text-sage text-xs mt-1 font-500">Retiro en local · Pickup disponible</p>
                 </div>
               </div>
@@ -720,13 +721,17 @@ function Contact() {
 
           {/* Map embed */}
           <FadeIn delay={0.2} className="h-full min-h-72">
-            <div className="rounded-3xl overflow-hidden shadow-card h-full min-h-72">
+            <div className="rounded-3xl overflow-hidden shadow-card h-full min-h-72" style={{ background: "#1a1a2e" }}>
               <iframe
-                title="Nuna's ubicación en Asunción"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115752.93660282327!2d-57.6697!3d-25.2867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da8c2d9b97879%3A0x6a7a33ce4f07a95c!2sAsunci%C3%B3n%2C%20Paraguay!5e0!3m2!1ses!2s!4v1704726000000!5m2!1ses!2s"
+                title="Nuna's ubicación — Av. Molas López & Veterano de la Guerra del 70, Asunción"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.7!2d-57.5989!3d-25.3005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da981b2f5c4b5%3A0x1!2sAv.+Doctor+Felipe+Molas+L%C3%B3pez+%26+Veterano+de+la+Guerra+del+70%2C+Asunci%C3%B3n%2C+Paraguay!5e0!3m2!1ses!2spy!4v1704726000000!5m2!1ses!2spy"
                 width="100%"
                 height="100%"
-                style={{ border: 0, minHeight: 288 }}
+                style={{
+                  border: 0,
+                  minHeight: 288,
+                  filter: "invert(90%) hue-rotate(180deg) saturate(0.85) brightness(0.92)",
+                }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
